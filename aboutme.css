@@ -1,0 +1,211 @@
+
+body{
+  font-family: 'Roboto', sans-serif;
+  /*background-image: linear-gradient(to right, #ffffff, #f0ebeb);*/
+  /*background-image: linear-gradient(to right, #ffccc9, #fffec9, #c9ffed, #c9edff, #c9ceff);*/
+  background-color: white;
+  font-weight:lightest;
+}
+
+/* HEADER WRAPPER */
+.header-border{
+  border-radius: 10px;
+  border: 1px solid #303030;
+  margin: 10px;
+}
+
+/* HEADER */
+h1 {
+  height: 80px;
+  /*background-image: linear-gradient(to right, #ffccc9, #fffec9, #c9ffed, #c9edff, #c9ceff);*/
+  background-image: linear-gradient(to right, #c9ceff, #fffec9, #c9ffed, #c9edff, #c9ceff);
+  border-radius: 10px;
+
+  padding-top: 20px;
+  font-size: 50px;
+  font-family: 'Petit Formal Script', cursive;
+  font-weight: lighter;
+  text-align: center;
+  color: #303030;
+  margin: 15px;
+}
+
+/* MENU BAR */
+.menu-bar {
+  list-style: none;
+  background-color: white;
+  /*border-radius: 10px;*/
+  /*border: 1px solid #303030;*/
+  /*
+  border-top: 1px solid #303030;
+  border-bottom: 1px solid #303030;*/
+
+  height: auto;
+  padding: 0;
+  margin: 10px;
+  color: white;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: stretch;
+  align-content: stretch;
+}
+
+/* MENU BAR ITEMS */
+.item{
+  height: 30px;
+  padding-top: 12px;
+  width: 25%;
+  margin: 0;
+  text-align: center;
+}
+.item a{
+  text-decoration: none;
+  font-weight: lighter;
+  color: #303030;
+}
+
+/* MAKE ITEM SHADE ON HOVER */
+.item:hover{
+  /*background-color: #f5f5f5;*/
+  border-radius: 10px;
+  text-decoration: underline;
+  background-color: #c9ffed;
+}
+
+/* FORMATS BODY LAYOUT */
+.body-cols{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 5px;
+  align-items: flex-start;
+}
+
+.left-col{
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  width: 75%;
+}
+
+
+/* CONTAINS ABOUT ME INFO */
+.card{
+  background-color: white;
+  border-radius: 10px;
+  /*margin: 5px;*/
+  padding: 15px;
+  height: auto;
+  border: 1px solid #303030;
+  /*width: 75%;*/
+}
+
+h2{
+  font-family: 'Petit Formal Script', cursive;
+}
+
+/* BORDER FOR PICS */
+.pics-container{
+  border-radius: 10px;
+  /*border: 1px solid #303030;*/
+  margin-top: 10px;
+  /*padding: 15px;*/
+}
+
+/* INNER FLEXBOX HOLDING PICS */
+.pics-inner{
+  margin: 10px;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+  align-items: stretch;
+}
+
+
+.pic-item{
+  border-radius: 10px;
+  margin: 5px;
+  padding: 10px;
+  background-color: pink;
+  width: 100px;
+  height: 100px;
+}
+
+
+/* SIDEBAR */
+.right-col{
+  width: 25%;
+  padding: 10px;
+  text-align: justify;
+  margin: 10px;
+}
+
+.right-col img{
+  border-radius: 50%;
+  max-width: 60%;
+  max-height: auto;
+  margin-left: 20%;
+}
+
+.right-col p{
+  padding: 15px;
+  border-top: 1px solid #303030;
+  border-bottom: 1px solid #303030;
+  font-weight: 300;
+  font-size: 14px;
+}
+.right-col a{
+  font-weight: lighter;
+  decoration: none;
+  color: #303030;
+}
+
+/* SOCIAL MEDIA BUTTONS */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 13%;
+  height: auto;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  margin: 5px 2px;
+}
+
+.fa-linkedin{
+  background-color: #55ACEE;
+  color: white;
+}
+
+.fa-github{
+  background-color: blue;
+  color: white;
+}
+
+.fa-instagram{
+  background-color: blue;
+  color: white;
+}
+
+@media screen and (max-width: 600px) {
+  .menu-bar{
+    flex-direction: column;
+    flex-flow: column wrap;
+    align-items: stretch;
+  }
+  .item{
+    width: 100%;
+  }
+  .body-cols{
+    flex-direction: column;
+    flex-flow: column wrap;
+  }
+  .right-col{
+    width: 100%;
+  }
+  .left-col{
+    width: 100%;
+  }
+}
