@@ -1,0 +1,79 @@
+body{
+  font-family: 'Roboto', sans-serif;
+  /*background-image: linear-gradient(to right, #ffffff, #f0ebeb);*/
+  /*background-image: linear-gradient(to right, #ffccc9, #fffec9, #c9ffed, #c9edff, #c9ceff);*/
+  background-color: white;
+  font-weight:lightest;
+}
+
+/* HEADER WRAPPER */
+.header-border{
+  border-radius: 10px;
+  border: 1px solid #303030;
+  margin: 10px;
+}
+
+/* HEADER */
+h1 {
+  height: 80px;
+  /*background-image: linear-gradient(to right, #ffccc9, #fffec9, #c9ffed, #c9edff, #c9ceff);*/
+  background-image: linear-gradient(to right, #c9ceff, #fffec9, #c9ffed, #c9edff, #c9ceff);
+  border-radius: 10px;
+
+  padding-top: 20px;
+  font-size: 50px;
+  font-family: 'Petit Formal Script', cursive;
+  font-weight: lighter;
+  text-align: center;
+  color: #303030;
+  margin: 15px;
+}
+
+/* MENU BAR */
+.menu-bar {
+  list-style: none;
+  background-color: white;
+  /*border-radius: 10px;*/
+  /*border: 1px solid #303030;*/
+  /*
+  border-top: 1px solid #303030;
+  border-bottom: 1px solid #303030;*/
+
+  height: auto;
+  padding: 0;
+  margin: 10px;
+  color: white;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: stretch;
+  align-content: stretch;
+}
+
+/* MENU BAR ITEMS */
+.item{
+  height: 30px;
+  padding-top: 12px;
+  width: 25%;
+  margin: 0;
+  text-align: center;
+}
+.item a{
+  text-decoration: none;
+  font-weight: lighter;
+  color: #303030;
+}
+
+/* MAKE ITEM SHADE ON HOVER */
+.item:hover{
+  /*background-color: #f5f5f5;*/
+  border-radius: 10px;
+  text-decoration: underline;
+  background-color: #c9ffed;
+}
+
+.resume{
+  margin-top: 15px;
+  text-align: center;
+}
